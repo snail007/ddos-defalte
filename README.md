@@ -15,3 +15,4 @@ DDOS defalte是一款免费的用来防御和减轻DDoS攻击。它通过netstat
 /usr/local/sbin/ddos命令是脚本/usr/local/ddos/ddos.sh的一个软链接  
 9. 我们只需要计划任务周执 ddos 命令即可。ddos每执行一次都会按着配置里面的设置封ip。
 10. 比如可以这样执行计划任务 */1 * * * * /usr/local/ddos/ddos.sh >/dev/null 2>&1
+11. 命令ddos有一些带参数的用法，可以通过ddos -h 了解用法。
