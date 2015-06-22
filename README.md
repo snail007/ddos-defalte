@@ -23,14 +23,8 @@ DDOS defalte是一款免费的用来防御和减轻DDoS攻击。它通过netstat
 PROGDIR="/usr/local/ddos" 
 PROG="/usr/local/ddos/ddos.sh" 
 IGNORE_IP_LIST="/usr/local/ddos/ignore.ip.list"  #ip的白名单 
-CRON="/etc/cron.d/ddos.cron" #定时器 
 APF="/etc/apf/apf" 
 IPT="/sbin/iptables" 
-
-##### frequency in minutes for running the script 
-##### Caution: Every time this setting is changed, run the script with --cron 
-#####          option so that the new frequency takes effect 
-FREQ=1 
 
 ##### How many connections define a bad IP? Indicate that below. 
 NO_OF_CONNECTIONS=100 #一个ip超过100个连接数,自动封掉 
@@ -45,7 +39,7 @@ KILL=1
 
 ##### An email is sent to the following address when an IP is banned. 
 ##### Blank would suppress sending of mails ,设置为 root 则不发邮件
-EMAIL_TO="111111@qq.com"  #封ip,自动发送邮件 
+EMAIL_TO="root"  #封ip,自动发送邮件 
 
 ##### Number of seconds the banned ip should remain in blacklist. 
 BAN_PERIOD=600 
