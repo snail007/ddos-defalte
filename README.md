@@ -13,8 +13,11 @@ DDOS defalte是一款免费的用来防御和减轻DDoS攻击。它通过netstat
 7. ip白名单文件位于 /usr/local/ddos/ignore.ip.list ，格式：一行一个ip
 8. 配置完毕之后执行命令 ddos 可以看到一行行的输出，每行：第一个是连接数 第二个是对应ip  
 /usr/local/sbin/ddos命令是脚本/usr/local/ddos/ddos.sh的一个软链接  
-9. 安装完毕后会生成计划任务文件：/etc/cron.d/ddos.cron，如果文件不存在可以手动加上计划任务即可。
-我们只需要计划任务周执 ddos 命令即可。ddos每执行一次都会按着配置里面的设置封ip。
+9. 安装完毕后会生成计划任务文件：/etc/cron.d/ddos.cron，如果文件不存在可以手动加上计划任务即可。  
+我们只需要计划任务周执 ddos 命令即可。ddos每执行一次都会按着配置里面的设置封ip。  
+提醒：  
+修改或删除了文件/etc/cron.d/ddos.cron之后  
+记得执行service cron restar 才会生效。  
 10. 比如我们可以删除/etc/cron.d/ddos.cron，然后crontab -e 可以这样执行计划任务 */1 * * * * /usr/local/ddos/ddos.sh >/dev/null 2>&1
 11. 命令ddos有一些带参数的用法，可以通过ddos -h 了解用法。
 
