@@ -18,7 +18,7 @@ DDOS defalte是一款免费的用来防御和减轻DDoS攻击。它通过netstat
 11. 命令ddos有一些带参数的用法，可以通过ddos -h 了解用法。
 
 配置文件/usr/local/ddos/ddos.conf的一些简要说明：  
-<code>
+<pre>
 PROGDIR="/usr/local/ddos" 
 PROG="/usr/local/ddos/ddos.sh" 
 IGNORE_IP_LIST="/usr/local/ddos/ignore.ip.list"  #ip的白名单 
@@ -48,4 +48,4 @@ EMAIL_TO="381895649@qq.com"  #封ip,自动发送邮件
 
 ##### Number of seconds the banned ip should remain in blacklist. 
 BAN_PERIOD=600 
-</code>
+</pre>
