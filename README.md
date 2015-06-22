@@ -43,8 +43,8 @@ APF_BAN=0 #这里我使用iptables封ip
 KILL=1 
 
 ##### An email is sent to the following address when an IP is banned. 
-##### Blank would suppress sending of mails 
-EMAIL_TO="381895649@qq.com"  #封ip,自动发送邮件 
+##### Blank would suppress sending of mails ,设置为 root 则不发邮件
+EMAIL_TO="111111@qq.com"  #封ip,自动发送邮件 
 
 ##### Number of seconds the banned ip should remain in blacklist. 
 BAN_PERIOD=600 
