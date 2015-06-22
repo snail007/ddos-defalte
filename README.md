@@ -49,3 +49,6 @@ EMAIL_TO="111111@qq.com"  #封ip,自动发送邮件
 ##### Number of seconds the banned ip should remain in blacklist. 
 BAN_PERIOD=600 
 </pre>
+
+
+
