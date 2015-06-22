@@ -1,0 +1,2 @@
+# ddos-defalte
+DDOS defalte是一款免费的用来防御和减轻DDoS攻击。它通过netstat监测跟踪创建大量网络连接的IP地址，在检测到某个结点超过预设的限制时，该程序会通过APF或iptables禁止或阻挡这些IP.
